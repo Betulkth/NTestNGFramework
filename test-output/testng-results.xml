@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-24T17:35:23 MDT" name="Default suite" finished-at="2024-09-24T17:35:37 MDT" duration-ms="14368">
+    <groups>
+      <group name="regression">
+        <method signature="LoginTest.invalidPasswordLogin()[pri:0, instance:com.neotech.testcases.LoginTest@2a5c8d3f]" name="invalidPasswordLogin" class="com.neotech.testcases.LoginTest"/>
+        <method signature="LoginTest.validLogin()[pri:0, instance:com.neotech.testcases.LoginTest@2a5c8d3f]" name="validLogin" class="com.neotech.testcases.LoginTest"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="LoginTest.emptyPasswordLogin()[pri:0, instance:com.neotech.testcases.LoginTest@2a5c8d3f]" name="emptyPasswordLogin" class="com.neotech.testcases.LoginTest"/>
+        <method signature="LoginTest.validLogin()[pri:0, instance:com.neotech.testcases.LoginTest@2a5c8d3f]" name="validLogin" class="com.neotech.testcases.LoginTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2024-09-24T17:35:23 MDT" name="Default test" finished-at="2024-09-24T17:35:37 MDT" duration-ms="14368">
+      <class name="com.neotech.testcases.LoginTest">
+        <test-method is-config="true" signature="generateReport()[pri:0, instance:com.neotech.testcases.LoginTest@2a5c8d3f]" started-at="2024-09-24T17:35:23 MDT" name="generateReport" finished-at="2024-09-24T17:35:23 MDT" duration-ms="266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.neotech.testcases.LoginTest@2a5c8d3f]" started-at="2024-09-24T17:35:23 MDT" name="setUp" finished-at="2024-09-24T17:35:27 MDT" duration-ms="3525" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="emptyPasswordLogin()[pri:0, instance:com.neotech.testcases.LoginTest@2a5c8d3f]" started-at="2024-09-24T17:35:27 MDT" name="emptyPasswordLogin" finished-at="2024-09-24T17:35:27 MDT" duration-ms="11" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentTest.info(String)" because "com.neotech.testcases.LoginTest.test" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.info(String)" because "com.neotech.testcases.LoginTest.test" is null
+at com.neotech.testcases.LoginTest.emptyPasswordLogin(LoginTest.java:44)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyPasswordLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.neotech.testcases.LoginTest@2a5c8d3f]" started-at="2024-09-24T17:35:27 MDT" name="tearDown" finished-at="2024-09-24T17:35:27 MDT" duration-ms="411" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.neotech.testcases.LoginTest@2a5c8d3f]" started-at="2024-09-24T17:35:27 MDT" name="setUp" finished-at="2024-09-24T17:35:30 MDT" duration-ms="2653" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidPasswordLogin()[pri:0, instance:com.neotech.testcases.LoginTest@2a5c8d3f]" started-at="2024-09-24T17:35:30 MDT" name="invalidPasswordLogin" finished-at="2024-09-24T17:35:30 MDT" duration-ms="2" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentTest.info(String)" because "com.neotech.testcases.LoginTest.test" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.info(String)" because "com.neotech.testcases.LoginTest.test" is null
+at com.neotech.testcases.LoginTest.invalidPasswordLogin(LoginTest.java:71)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidPasswordLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.neotech.testcases.LoginTest@2a5c8d3f]" started-at="2024-09-24T17:35:30 MDT" name="tearDown" finished-at="2024-09-24T17:35:30 MDT" duration-ms="246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.neotech.testcases.LoginTest@2a5c8d3f]" started-at="2024-09-24T17:35:30 MDT" name="setUp" finished-at="2024-09-24T17:35:33 MDT" duration-ms="2779" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validLogin()[pri:0, instance:com.neotech.testcases.LoginTest@2a5c8d3f]" started-at="2024-09-24T17:35:33 MDT" name="validLogin" finished-at="2024-09-24T17:35:37 MDT" duration-ms="3556" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.neotech.testcases.LoginTest@2a5c8d3f]" started-at="2024-09-24T17:35:37 MDT" name="tearDown" finished-at="2024-09-24T17:35:37 MDT" duration-ms="512" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="writeReport()[pri:0, instance:com.neotech.testcases.LoginTest@2a5c8d3f]" started-at="2024-09-24T17:35:37 MDT" name="writeReport" finished-at="2024-09-24T17:35:37 MDT" duration-ms="342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- writeReport -->
+      </class> <!-- com.neotech.testcases.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
